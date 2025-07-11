@@ -18,7 +18,7 @@ try:
     # Загружаем модель
     model = Model(MODEL_PATH)
     
-    # Создаем объект распознавателя
+    # Создаем объект распознавателя 
     rec = KaldiRecognizer(model, 16000)
 
     with sd.RawInputStream(samplerate=16000, blocksize=8000, dtype='int16', channels=1, callback=callback):
