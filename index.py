@@ -5,8 +5,7 @@ from vosk import Model, KaldiRecognizer
 import json
 
 # Укажите путь к скачанной модели
-MODEL_PATH = 'vosk-model-small-ru-0.22'
-
+MODEL_PATH = "vosk-model-small-ru-0.22"
 q = queue.Queue()
 
 def callback(indata, frames, time, status):
